@@ -1,0 +1,40 @@
+{
+  "name": "blog-core",
+  "version": "0.0.1",
+  "description": "Tab team first realisation of blog_core",
+  "main": "compiled/app.js",
+  "scripts": {
+    "start": "tsc && node compiled/app.js",
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TabTeam",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/crypto-js": "^4.1.1",
+    "@types/express": "github:types/express",
+    "@types/express-ws": "^3.0.1",
+    "@types/joi": "^17.2.3",
+    "@types/node": "^18.7.18",
+    "@types/ws": "^8.5.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.17.2",
+    "express-ws": "^5.0.2",
+    "joi": "^17.6.1",
+    "ws": "^8.9.0"
+  },
+  "repository": "git@gitlab.com:tabteam-space/blog-core.git"
+}
