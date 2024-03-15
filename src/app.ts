@@ -1,10 +1,10 @@
 import express from 'express'
 import exchangesRoutes from './components/routes'
 import cors from "cors"
-import OKX from '../src/components/exchanges/OKX/OKX'
+import OKX from './components/exchanges/OKX/OKX'
 
 const okx = new OKX()
-const port = 7777
+const port = 7778
 const app = express()
 const corsOptions = {
     origin:'http://btc.tabteam.space',

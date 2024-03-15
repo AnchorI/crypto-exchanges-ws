@@ -1,6 +1,6 @@
 import { WebSocketServer } from "ws";
 
-const wss = new WebSocketServer({ port: 7780 })
+const wss = new WebSocketServer({ port: 7779 })
 
 export const FullData = {
     OKX: {"BTC-BTC": "0"},
