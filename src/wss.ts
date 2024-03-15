@@ -14,5 +14,4 @@ wss.on('connection', function connection(ws) {
         console.log('WebSocket connected')
     })
     setInterval(() => ws.send(JSON.stringify(FullData)), 200)
-    ws.send('All Right')
 })

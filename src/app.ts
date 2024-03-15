@@ -1,6 +1,9 @@
 import express from 'express'
 import exchangesRoutes from './components/routes'
 import cors from "cors"
+import OKX from '../src/components/exchanges/OKX/OKX'
+
+const okx = new OKX()
 const port = 7777
 const app = express()
 const corsOptions = {
@@ -20,6 +23,7 @@ app.listen(port, err => {
         return console.log(`server is listening on ${port}`)
     }
 )
+okx.getOkx()
 
 setInterval(proc, 5000); // endless loop
 

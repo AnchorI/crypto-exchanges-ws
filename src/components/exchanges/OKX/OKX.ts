@@ -11,7 +11,7 @@ const btc = []
 const btc2 = []
 
 List.map((token) => { args.push({channel: 'books', instId: token}) })
-List2.map((token) => { args2.push({channel: 'books', instId: token})})
+// List2.map((token) => { args2.push({channel: 'books', instId: token})})
 ListBtc.map((token) => { btc.push({channel: 'tickers', instId: token})})
 ListBtc2.map((token) => { btc2.push({channel: 'tickers', instId: token})})
 
